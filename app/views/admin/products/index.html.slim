@@ -1,0 +1,14 @@
+.ui.container
+  #product-form style='display: none;'
+  = link_to 'New Product', new_admin_product_path, id: 'new-product-button', class: 'ui large teal  button', remote: true
+  table.ui.celled.striped.table
+    thead
+      tr
+        th Title
+        th Description
+        th Price
+        th Quantity
+        th Action
+        th Created at
+    tbody#products-tbody
+      = render @products

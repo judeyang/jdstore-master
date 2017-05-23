@@ -1,0 +1,27 @@
+h3.header 订单状态
+.ui.segments
+  - if @order.aasm_state == 'order_cancelled'
+    label.ui.red.right.ribbon.label 订单已取消
+  - elsif @order.aasm_state == 'good_returned'
+    label.ui.red.right.ribbon.label 已退货
+  .ui.four.column.stackable.steps
+    div class="#{order.compare_with_state('order_placed')} step"
+      = semantic_icon 'pointing down'
+      .content
+        .title Order
+        .description 下单
+    div class="#{order.compare_with_state('paid')} step"
+      = semantic_icon 'dollar'
+      .content
+        .title Pay
+        .description 付款
+    div class="#{order.compare_with_state('shipping')} step"
+      = semantic_icon 'plane'
+      .content
+        .title Ship
+        .description 发货
+    div class="#{order.compare_with_state('shipped')} step"
+      = semantic_icon 'info circle'
+      .content
+        .title Receive
+        .description 收货

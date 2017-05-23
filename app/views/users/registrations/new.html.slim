@@ -1,0 +1,13 @@
+.ui.middle.aligned.center.aligned.grid[style='margin-top: 7em;']
+  .six.wide.column
+    h2.ui.teal.header
+      | Sign up
+    .ui.stacked.segment
+      = render 'common/error_messages', object: @user
+      = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        = f.input :email, required: true, autofocus: true, wrapper: :ui_icon_input, autofocus: true, icon: 'user', placeholder: 'E-mail address'
+        = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), wrapper: :ui_icon_input, icon: 'lock', placeholder: 'Password'
+        = f.input :password_confirmation, required: true, wrapper: :ui_icon_input, icon: 'lock', placeholder: 'Password'
+        = f.button :submit, "Sign up", class: 'ui fluid large teal button'
+    .ui.message
+      = render "devise/shared/links"

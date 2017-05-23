@@ -1,0 +1,20 @@
+.ui.container
+  h2.header 订单列表
+  table.ui.celled.striped.table
+    thead
+      tr
+        th #
+        th 时间
+        th 订购者
+        th 订单状态
+    tbody
+      - @orders.each do |order|
+        tr
+          td
+            = link_to order.token, admin_order_path(order)
+          td 
+            = order.created_at.to_s(:long)
+          td
+            = order.user.email
+          td
+            = order.aasm_state

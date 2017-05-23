@@ -1,0 +1,43 @@
+.ui.container
+  h3.header 订单明细
+  small
+    = link_to '订单连接', account_order_url(@order.token)
+
+  table.ui.celled.striped.table
+    thead
+      tr
+        th width="70%" 商品明细
+        th 单价
+        th 数量
+        th 小记
+    tbody
+      - @product_lists.each do |product_list|
+        tr
+          td
+            = product_list.product_name
+          td
+            = product_list.product_price
+          td
+            = product_list.quantity
+          td
+            = product_list.quantity * product_list.product_price
+
+  .ui.right.aligned.container
+    .ui.large.label
+      | 合计:
+      = @order.total
+      | 元
+
+  h3.header 寄送信息
+  .ui.segments
+    .ui.secondary.segment 订购人
+    .ui.segment
+      = @order.billing_name
+      | -
+      = @order.billing_address
+    .ui.secondary.segment 收件人
+    .ui.segment
+      = @order.shipping_name
+      | -
+      = @order.shipping_address
+

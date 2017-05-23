@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title
+      | 胶澳学堂
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    = render 'common/menu'
+    main.ui.grid.container[style='margin-top: 80px;']
+      .row
+        .four.wide.column
+          .ui.vertical.menu
+            .item
+              = link_to 'Products', admin_products_path
+            .item
+              = link_to 'Orders', admin_orders_path
+        .twelve.wide.column
+            #flash_message
+              = semantic_flash
+            = yield
+    = render 'common/footer'
+

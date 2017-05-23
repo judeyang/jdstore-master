@@ -1,0 +1,4 @@
+$('#product-form').transition('fade out')
+$('#new-product-button').transition('fade in'); 
+$("#products-tbody #product-<%= @product.id %>").remove()
+$("#products-tbody").append("<%= j (render @product) %>");

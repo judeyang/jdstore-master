@@ -1,0 +1,29 @@
+.ui.stackable.grid.container[style='margin-top: 20px;']
+  .seven.wide.column
+    .ui.piled.segment
+      = render_image @product.image, :medium, 'ui centered image'
+  .nine.wide.column
+    h2.header = @product.title
+    span
+      = social_share_button_tag @product.title, 'data-title': @product.title, image: @product.image.url(:thumb), 'data-type': 'photo'
+    .ui.divider
+    = @product.description
+    .ui.divider
+    .ui.container
+      - if @product.quantity > 0
+        .ui.tiny.statistic
+          .value = @product.quantity
+          .label 今日尚余
+        .ui.tiny.right.floated.grey.statistic
+          .value = @product.proceeds
+          .label 已售
+        = form_tag add_to_cart_product_path(@product), method: :post, class: 'ui form' do
+          .field
+            .ui.action.input
+              = number_field nil, :buy_num, value: 1, in: 1..@product.quantity
+              = submit_tag '加入购物车', class: 'ui right floated red large button'
+      - else
+        .ui.large.right.floated.grey.statistic
+          .value = @product.proceeds
+          .label 已售罄
+
