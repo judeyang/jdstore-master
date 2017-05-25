@@ -1,0 +1,58 @@
+<div class="ui inverted large top fixed menu" id="header-menu">
+  <div class="ui container">
+    <%= ::Temple::Utils.escape_html((link_to '私房菜', products_path, class: 'ui large header item', 'data-turbolinks': "false")) %>
+    <div class="right menu">
+      <% unless user_signed_in?%>
+      <div class="item">
+        <%= ::Temple::Utils.escape_html((link_to 'Log in', new_user_session_path, class: 'ui inverted button')) %>
+      </div>
+
+      <div class="item">
+        <%= ::Temple::Utils.escape_html((link_to 'Sign up', new_user_registration_path, class: 'ui inverted button')) %>
+      </div>
+        <% else %>
+
+      <div class="item">
+        <% _slim_controls1 = link_to carts_path do %>
+        <% _slim_controls2 = '';;
+        _slim_controls2 << ("购物车".freeze);;
+        _slim_controls2 << ((::Temple::Utils.escape_html((semantic_icon 'in cart'))).to_s);;
+        _slim_controls2 << ("<div".freeze);
+        _slim_controls2 << (" class=\"".freeze);
+        _slim_controls2 << ("ui".freeze);
+        _slim_controls2 << (" ".freeze);
+        _slim_controls2 << ("circular".freeze);
+        _slim_controls2 << (" ".freeze);
+        _slim_controls2 << ("label".freeze);
+        _slim_controls2 << ("\"".freeze);
+        _slim_controls2 << (" id=\"".freeze);
+        _slim_controls2 << ("cart_size".freeze);
+        _slim_controls2 << ("\"".freeze);
+        _slim_controls2 << (">".freeze);;
+        _slim_controls2 << ((::Temple::Utils.escape_html((current_cart.products.count))).to_s);;
+        _slim_controls2 << ("</div>".freeze);
+        _slim_controls2 %>
+        <% end %>
+        <%= ::Temple::Utils.escape_html((_slim_controls1)) %>
+      </div>
+
+      <div class="ui simple dropdown item">
+        <%= ::Temple::Utils.escape_html((current_user.email)) %>
+        <%= ::Temple::Utils.escape_html((semantic_icon 'dropdown')) %>
+        <div class="menu">
+          <% if current_user.admin?%>
+          <%= ::Temple::Utils.escape_html((link_to 'Admin panel', admin_products_path, class: 'item')) %>
+          <%= ::Temple::Utils.escape_html((link_to 'Order panel', admin_orders_path, class: 'item')) %>
+
+          <div class="ui divider">
+          </div>
+
+          <% end %>
+          <%= ::Temple::Utils.escape_html((link_to 'Order list', account_orders_path, class: 'item')) %>
+          <%= ::Temple::Utils.escape_html((link_to semantic_icon('sign out') + 'Sign out', destroy_user_session_path, method: :delete, class: 'item')) %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
