@@ -4,7 +4,7 @@ html
     title
       | 胶澳学堂
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application' , media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     = render 'common/menu'
@@ -21,4 +21,3 @@ html
               = semantic_flash
             = yield
     = render 'common/footer'
-
