@@ -6,16 +6,11 @@
 			<div class="container">
 
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="welcome/index.html">胶澳学堂</a>
+
+					<a class="navbar-brand" href="/">胶澳学堂</a>
 				</div>
 
-				<div class="collapse navbar-collapse" id="custom-collapse">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 					<ul class="nav navbar-nav navbar-right">
 
@@ -123,6 +118,11 @@
 
 						<li><%= link_to("注册", new_user_registration_path) %> </li>
             <li><%= link_to("登入", new_user_session_path) %></li>
+						<li><%= link_to("订单列表", account_orders_path) %></li>
+						<li><%= link_to("登出", destroy_user_session_path) %></li>
+
+
+
 
 					</ul>
 				</div>
