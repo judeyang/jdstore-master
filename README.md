@@ -1,24 +1,35 @@
 # README
+全栈营第一期留级生的逆袭之作~ 一个人的作品
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+由于现在还没有队友又想把这个网站做成真实的作品，希望各位多提宝贵意见。
 
-Things you may want to cover:
+在此谢过，么么哒~
 
-* Ruby version
 
-* System dependencies
+注：有想组队，并且擅长后端的朋友请与我联系 wechat：judeyang
 
-* Configuration
+更新日志
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+V0.2
+已经上床到Heroku，网页能看了，但是只是一个 landingpage，与后台的链接还没有修改。搞定 landingpage 的各个问题后开始实施。
+Landing page 已经修改完毕。
+之前发现的几个问题在imtinge 的帮助下已经解决了 V0.1的三个问题。
+现在首页还有一个 scroll-up 功能没有实现。
+在手机上浏览，导航栏有点问题。明天尽量解决。
+2017-05-26 22:00
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+V0.1
+实现功能：
+1、完成了 landing page 的制作，当然了里面的slogan还是很雷人。
+2、后台基本框架已经完成，但是由于 navbar 是透明的，体验效果不佳，决定修复后再上传。争取两天内完成。
+3、图片组合部分的鼠标悬停效果，图片筛选效果也已经实现。
+有待改进的地方
+1、首页三句话的溶解变换效果还没有实现。
+2、网页打开速度特别慢，服务器 log 页面报错比较多。有待解决。
+3、navbar 是透明的，其他页面不显示。
+4、navbar 的页面链接还没有做。
+上述4个问题争取明天这个时间解决50%
+2017-05-25 19:23
