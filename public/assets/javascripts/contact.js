@@ -1,52 +1,82 @@
-(function($){
+var ContactForm = function () {
 
-	$(document).ready(function() {
+    return {
 
-		/* ---------------------------------------------- /*
-		 * Contact form ajax
-		/* ---------------------------------------------- */
+        //Contact Form
+        initContactForm: function () {
+	        // Validation
+	        $("#sky-form3").validate({
+	            // Rules for form validation
+	            rules:
+	            {
+	                name:
+	                {
+	                    required: true
+	                },
+	                email:
+	                {
+	                    required: true,
+	                    email: true
+	                },
+	                message:
+	                {
+	                    required: true,
+	                    minlength: 10
+	                },
+	                captcha:
+	                {
+	                    required: true,
+	                    remote: 'assets/plugins/sky-forms/version-2.0.1/captcha/process.php'
+	                }
+	            },
 
-		$('#contact-form').find('input,textarea').jqBootstrapValidation({
-			preventSubmit: true,
-			submitError: function($form, event, errors) {
-				// additional error messages or events
-			},
-			submitSuccess: function($form, event) {
-				event.preventDefault();
+	            // Messages for form validation
+	            messages:
+	            {
+	                name:
+	                {
+	                    required: 'Please enter your name',
+	                },
+	                email:
+	                {
+	                    required: 'Please enter your email address',
+	                    email: 'Please enter a VALID email address'
+	                },
+	                message:
+	                {
+	                    required: 'Please enter your message'
+	                },
+	                captcha:
+	                {
+	                    required: 'Please enter characters',
+	                    remote: 'Correct captcha is required'
+	                }
+	            },
 
-				var submit          = $('#contact-form submit');
-				var ajaxResponse    = $('#contact-response');
+	            // Ajax form submition
+	            submitHandler: function(form)
+	            {
+	                $(form).ajaxSubmit(
+	                {
+	                    beforeSend: function()
+	                    {
+	                        $('#sky-form3 button[type="submit"]').attr('disabled', true);
+	                    },
+	                    success: function()
+	                    {
+	                        $("#sky-form3").addClass('submited');
+	                    }
+	                });
+	            },
 
-				var name            = $("input#cname").val();
-				var email           = $("input#cemail").val();
-				var message         = $("textarea#cmessage").val();
+	            // Do not change code below
+	            errorPlacement: function(error, element)
+	            {
+	                error.insertAfter(element.parent());
+	            }
+	        });
+        }
 
-				$.ajax({
-					type: 'POST',
-					url: 'assets/php/contact.php',
-					dataType: 'json',
-					data: {
-						name: name,
-						email: email,
-						message: message,
-					},
-					cache: false,
-					beforeSend: function(result) {
-						submit.empty();
-						submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
-					},
-					success: function(result) {
-						if(result.sendstatus == 1) {
-							ajaxResponse.html(result.message);
-							$form.fadeOut(500);
-						} else {
-							ajaxResponse.html(result.message);
-						}
-					}
-				});
-			}
-		});
+    };
 
-	});
-
-})(jQuery);
+}();

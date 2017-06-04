@@ -1,477 +1,1107 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+	<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <title>七城工作室 - 7CHENG​​VISION</title>
+  <%= csrf_meta_tags %>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>胶澳学堂 - 林生轩诚意之作</title>
-  <%= csrf_meta_tags %>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-	<!-- Bootstrap core CSS -->
-	<link href="assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+	<!-- Web Fonts -->
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
 
-	<!-- Plugins -->
-	<link href="assets/stylesheets/simpletextrotator.css" rel="stylesheet">
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/stylesheets/one.style.css">
+
+	<!-- CSS Footer -->
+	<link rel="stylesheet" href="assets/stylesheets/footer-v7.css">
+
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="assets/stylesheets/demo.css">
+	<link rel="stylesheet" href="assets/stylesheets/animate.css">
+	<link rel="stylesheet" href="assets/stylesheets/yellow.css">
+	<link rel="stylesheet" href="assets/stylesheets/line-icons.css">
 	<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-	<link href="assets/stylesheets/et-line-font.css" rel="stylesheet">
-	<link href="assets/stylesheets/magnific-popup.css" rel="stylesheet">
-	<link href="assets/stylesheets/flexslider.css" rel="stylesheet">
-	<link href="assets/stylesheets/animate.css" rel="stylesheet">
-<link href="//cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/stylesheets/pace-flash.css">
+	<link rel="stylesheet" href="assets/stylesheets/owl.carousel.css">
+	<link rel="stylesheet" href="assets/stylesheets/cubeportfolio.min.css">
+	<link rel="stylesheet" href="assets/stylesheets/custom-cubeportfolio.css">
+	<link rel="stylesheet" href="assets/stylesheets/settings.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="assets/stylesheets/style.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
 
-	<!-- Template core CSS -->
-	<link href="assets/stylesheets/style.css" rel="stylesheet">
+	<!-- Style Switcher -->
+	<link rel="stylesheet" href="assets/stylesheets/style-switcher.css">
 
-	<!-- Custom css -->
-	<link href="assets/stylesheets/custom.css" rel="stylesheet">
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="assets/stylesheets/default.css" id="style_color">
+	<link rel="stylesheet" href="assets/stylesheets/one.dark.css">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="assets/stylesheets/custom.css">
 </head>
-<body>
 
-	<!-- PRELOADER -->
-	<div class="page-loader" style="display: none;">
-		<div class="loader" style="display: none;">Loading...</div>
-	</div>
-	<!-- /PRELOADER -->
+<!--
+The #page-top ID is part of the scrolling feature.
+The data-spy and data-target are part of the built-in Bootstrap scrollspy function.
+-->
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery " >
 
-	<!-- NAVIGATION -->
-	<nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+	<!--=== Header ===-->
+	<nav class="one-page-header one-page-header-style-2 navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="menu-container page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
-			<div class="container">
+				<a class="navbar-brand" href="#intro">
+					<span>柒</span> 城工作室-7CHENG​​VISION
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/">胶澳学堂</a>
-				</div>
+				</a>
+			</div>
 
-				<div class="collapse navbar-collapse" id="custom-collapse">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div class="menu-container">
+					<ul class="log-reg-block visible-md-block visible-lg-block">
+						<li class="cd-log_reg"><a class="cd-signin" href="javascript:void(0);">登录</a></li>
+						<li class="cd-log_reg"><a class="cd-signup" href="javascript:void(0);">注册</a></li>
+					</ul>
 
-					<ul class="nav navbar-nav navbar-right">
-
-						<li class="dropdown">
-							<a href="/" class="dropdown-toggle" data-toggle="dropdown">首页</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="/products">女神七成手机摄影课程</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">其他课程</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">大神举重🏋</a></li>
-										<li><a href="#">儿童摄影</a></li>
-									</ul>
-								</li>
-
-							</ul>
+					<ul class="nav navbar-nav">
+						<li class="page-scroll home">
+							<a href="/">首页</a>
 						</li>
-
-
-
-						<li><a href="#">About</a></li>
-
-
-
-
-						<!-- <li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
-								<li><a href="#"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
-								<li><a href="#"><i class="fa fa-tasks"></i> Collapses &amp; Tabs</a></li>
-								<li><a href="#"><i class="fa fa-list-alt"></i> Contents Box</a></li>
-								<li><a href="#"><i class="fa fa-check-square-o"></i> Forms</a></li>
-								<li><a href="#"><i class="fa fa-star"></i> Icons</a></li>
-								<li><a href="#"><i class="fa fa-server"></i> Progress Bars</a></li>
-								<li><a href="#"><i class="fa fa-font"></i> Typography</a></li>
-							</ul>
-						</li> -->
-
-						<ul class="nav navbar-nav navbar-right">
-
-
-	                <% if !current_user %>
-	                  <li><%= link_to("注册", new_user_registration_path) %> </li>
-	                  <li>
-	                    <%= link_to new_user_session_path do %>
-	                      <i class="fa fa-sign-in"> 登入</i>
-	                    <% end %>
-	                  </li>
-	                <% else %>
-										<li>
-											<%= link_to carts_path do  %>
-												 购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
-											<% end %>
-										</li>
-	                  <li class="dropdown" >
-	                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-	                        Hi!, <%= current_user.email %>
-
-	                    </a>
-	                    <ul class="dropdown-menu">
-	                        <% if current_user.admin? %>
-	                        <li>
-	                          <%= link_to("后台管理系统", admin_products_path ) %>
-	                        </li>
-	                        <% end %>
-
-	                        <li>
-	                          <%= link_to("个人订单列表", account_orders_path ) %>
-	                        </li>
-
-	                        <li>
-	                          <%= link_to destroy_user_session_path, method: :delete do %>
-	                            <i class="fa fa-sign-out"> 登出</i>
-	                          <% end %>
-	                        </li>
-	                    </ul>
-	                  </li>
-	                <% end %>
-	            </ul>
-
-
-
+						<li class="page-scroll">
+							<a href="#about">关于我们</a>
+						</li>
+						<li class="page-scroll">
+							<a href="#services">服务项目</a>
+						</li>
+						<li class="page-scroll">
+							<a href="#news">小道消息</a>
+						</li>
+						<li class="page-scroll">
+							<a href="#portfolio">作品集</a>
+						</li>
+						<li class="page-scroll">
+							<a href="#contact">联系我们</a>
+						</li>
+						<li class="cd-log_reg visible-xs-block visible-sm-block"><a class="cd-signin" href="javascript:void(0);">登录</a></li>
+						<li class="cd-log_reg visible-xs-block visible-sm-block"><a class="cd-signup" href="javascript:void(0);">注册</a></li>
+					</ul>
+				</div>
 			</div>
 
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
 	</nav>
-	<!-- /NAVIGATION -->
+	<!--=== End Header ===-->
 
-	<!-- HOME -->
-	<section id="home" class="module-hero module-parallax module-fade bg-dark-50" data-background="images/section-1.jpg">
+	<!-- Intro Section -->
+	<section id="intro" class="intro-section">
+		<div class="fullscreenbanner-container">
+			<div class="fullscreenbanner">
+				<ul>
+					<!-- SLIDE 1 -->
+					<li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+						<!-- MAIN IMAGE -->
+						<img src="images/bg1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
-			<div class="hs-caption container">
-				<div class="caption-content">
-					<div class="hs-title-size-2 font-inc text-uppercase m-b-20">
-						Hello & welcome
-					</div>
-					<div class="hs-title-size-3 font-alt">
-						女神七城手机摄影 <span class="rotate">0门槛 | 易学 | 即学即用</span>
-					</div>
-				</div>
+						<!-- LAYERS -->
+						<div class="tp-caption rs-caption-1 sft start"
+							data-x="center"
+							data-hoffset="0"
+							data-y="100"
+							data-speed="800"
+							data-start="2000"
+							data-easing="Back.easeInOut"
+							data-endspeed="300">
+							女 神 七 城 的 手 机 摄 影 课 程
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption rs-caption-2 sft"
+							data-x="center"
+							data-hoffset="0"
+							data-y="200"
+							data-speed="1000"
+							data-start="3000"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+							2017年七城工作室诚意推荐<br>
+							短时间内掌握手机摄影的相关知识
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption rs-caption-3 sft"
+							data-x="center"
+							data-hoffset="0"
+							data-y="360"
+							data-speed="800"
+							data-start="3500"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+							<span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+							<span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">七城的作品</a></span>
+						</div>
+					</li>
+
+					<!-- SLIDE 2 -->
+					<li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+						<!-- MAIN IMAGE -->
+						<img src="images/bg2.jpg" alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+						<!-- LAYERS -->
+						<div class="tp-caption rs-caption-1 sft start"
+							data-x="center"
+							data-hoffset="0"
+							data-y="100"
+							data-speed="800"
+							data-start="1500"
+							data-easing="Back.easeInOut"
+							data-endspeed="300">
+							七 城 工 作 室 想 你 所 需
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption rs-caption-2 sft"
+							data-x="center"
+							data-hoffset="0"
+							data-y="200"
+							data-speed="1000"
+							data-start="2500"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+							学习的理解在于用已知解释未知<br>
+							通过我们丰富的培训经验我们助力您从未知走向已知
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption rs-caption-3 sft"
+							data-x="center"
+							data-hoffset="0"
+							data-y="360"
+							data-speed="800"
+							data-start="3500"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+							<span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+							<span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">七城的作品</a></span>
+						</div>
+					</li>
+
+					<!-- SLIDE 3 -->
+					<li data-transition="slideup" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
+						<!-- MAIN IMAGE -->
+						<img src="images/bg3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+						<!-- LAYERS -->
+						<div class="tp-caption rs-caption-1 sft start"
+							data-x="center"
+							data-hoffset="0"
+							data-y="110"
+							data-speed="800"
+							data-start="1500"
+							data-easing="Back.easeInOut"
+							data-endspeed="300">
+							用 不 同 的 方 式 来 学 习 一 门 新 技 能
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption rs-caption-2 sfb"
+							data-x="center"
+							data-hoffset="0"
+							data-y="210"
+							data-speed="800"
+							data-start="2500"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+							人人都能学会 简单且易上手<br>
+							基于元认知、游戏成瘾式的培训方式 让你的摄影学习欲罢不能
+						</div>
+
+						<!-- LAYER -->
+						<div class="tp-caption rs-caption-3 sfb"
+							data-x="center"
+							data-hoffset="0"
+							data-y="370"
+							data-speed="800"
+							data-start="3500"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">
+							<span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">了解更多</a></span>
+							<span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">我们的作品</a></span>
+						</div>
+					</li>
+				</ul>
+				<div class="tp-bannertimer tp-bottom"></div>
+				<div class="tp-dottedoverlay twoxtwo"></div>
 			</div>
+		</div>
+	</section>
+	<!-- End Intro Section -->
 
-		</section >
-	<!-- /HOME -->
-
-	<!-- WRAPPER -->
-	<div class="wrapper">
-
-		<!-- PORTFOLIO -->
-		<section class="module-small p-t-20 p-b-0 p-t-sm-0">
-
+	<!--  About Section -->
+	<section id="about" class="about-section section-first">
+		<div class="block-v1">
 			<div class="container">
-
-				<!-- PORTFOLIO FILTER -->
-				<div class="row">
-					<div class="col-sm-12">
-
-						<ul id="filters" class="filter font-inc">
-							<li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
-							<li><a href="#" data-filter=".food" class="wow fadeInUp" data-wow-delay="0.2s">美食</a></li>
-							<li><a href="#" data-filter=".goods" class="wow fadeInUp" data-wow-delay="0.4s">美物</a></li>
-							<li><a href="#" data-filter=".photography" class="wow fadeInUp" data-wow-delay="0.6s">美景</a></li>
-							<li><a href="#" data-filter=".beauty" class="wow fadeInUp" data-wow-delay="0.8s">美人</a></li>
-						</ul>
-
+				<div class="row content-boxes-v3">
+					<div class="col-md-4 md-margin-bottom-30">
+						<i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
+						<div class="content-boxes-in-v3">
+							<h2 class="heading-sm">创造性的教学方式</h2>
+							<p>用一套基于认知心理学的课程设计方案，体验前所未有的成瘾式学习体验。</p>
+						</div>
+					</div>
+					<div class="col-md-4 md-margin-bottom-30">
+						<i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
+						<div class="content-boxes-in-v3">
+							<h2 class="heading-sm">基于用户体验的课程研发</h2>
+							<p>用户的每一条反馈我们都视若珍宝，通过及时的修正，避免掉各种专家盲点。</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
+						<div class="content-boxes-in-v3">
+							<h2 class="heading-sm">在线答疑</h2>
+							<p>定期组织线上直播，不让各种领您卡壳的问题过夜。有时候解决问题就在一瞬间。</p>
+						</div>
 					</div>
 				</div>
-				<!-- /PORTFOLIO FILTER -->
+			</div>
+		</div>
 
+		<div class="about-image bg-grey">
+			<div class="container">
+				<div class="title-v1">
+					<h1>我们是摄影技术的推广者</h1>
+					<p>七城工作室<strong>创造</strong> 了业内第一支将摄影课程变成一套游戏的团队 <br>
+					我们通过课程内容的不断迭代，帮助各位的摄影水平实现优质升级。<br>
+					同时放下你的完美，放下你的傲慢，终会<strong>成功</strong> 发现一群向上的人，共同成长。</p>
+				</div>
+				<div class="img-center">
+					<img class="img-responsive" src="images/mockup.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="container content-lg">
+			<div class="title-v1">
+				<h2>我们的使命</h2>
+				<p>始终有一种被这个时代<strong>选中了</strong>的感觉<br>
+				志在帮助更多的人用一种更<strong>舒服</strong>的方式，记录人生当中的精彩瞬间，记录生活点点滴滴</p>
 			</div>
 
-			<!-- PORTFOLIO LIST -->
-			<ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item beauty ">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/work-masonry-1.jpg" alt="">
+			<div class="row">
+				<div class="col-md-6 content-boxes-v3 margin-bottom-40">
+					<div class="clearfix margin-bottom-30">
+						<i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-trophy"></i>
+						<div class="content-boxes-in-v3">
+							<h2 class="heading-sm">创新学习方式的领导者</h2>
+							<p>看教程看不下去？听老师讲课会睡着？可能不是你的原因，而是课程设计反人类亦或是你比老师水平高。</p>
 						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美人-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								food
+					</div>
+					<div class="clearfix margin-bottom-30">
+						<i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-directions"></i>
+						<div class="content-boxes-in-v3">
+							<h2 class="heading-sm">最佳解决方案 &amp; 方法论</h2>
+							<p>学习的过程是大脑用未知来解释已知，传统教材的设计缺陷不是给新手看，字都能看懂，内容都不明白不是你的错，而是课程设计的原因。怎么解决？不要担心，我们来了。</p>
+						</div>
+					</div>
+					<div class="clearfix margin-bottom-30">
+						<i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-diamond"></i>
+						<div class="content-boxes-in-v3">
+							<h2 class="heading-sm">有温度的服务 &amp; 支持</h2>
+							<p>尽管我们的课程基于心理学、游戏化课程设计、成瘾式学习方式等各种方法论设计的课程，但是不同水平学员会有不同的问题，没管我们定期组织视频直播，线下活动，为您答疑解惑</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<img class="img-responsive" src="images/mockup1.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="parallax-quote parallaxBg">
+			<div class="container">
+				<div class="parallax-quote-in">
+					<p>如果你能使用手机，你就可以<span class="color-green">学会手机摄影</span> ，随手记录人生点滴。 <br>
+						 请相信我</p>
+					<small>- 七城 -</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="team-v1 bg-grey content-lg">
+			<div class="container">
+				<div class="title-v1">
+					<h2>认识下我们的团队</h2>
+					<p>我们与您 <strong>相遇、相知、相识</strong> 。 汝之所愿，吾之所为。 <br>
+					我们建立一套<strong>与众不同</strong> 的学习系统，刷新您的三观。</p>
+				</div>
+
+				<ul class="list-unstyled row">
+					<li class="col-sm-4 col-xs-4 ">
+						<div class="team-img">
+							<img class="img-responsive" src="images/img1-md.jpg" alt="">
+							<ul>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<h3>七城</h3>
+						<h4>/ 首席讲师 摄影师</h4>
+						<p>讲师、课程总监，课程主讲及设计由拍照美，人更美，微博10万粉大V，女神 @七城 亲自操刀。@七城工作室 的主理人。</p>
+					</li>
+
+					<li class="col-sm-4 col-xs-4 ">
+						<div class="team-img">
+							<img class="img-responsive" src="images/img2-md.jpg" alt="">
+							<ul>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<h3>JudeYang</h3>
+						<h4>/ IT</h4>
+						<p> 网站运维、help desk </p>
+					</li>
+
+					<li class="col-sm-4 col-xs-4 ">
+						<div class="team-img">
+							<img class="img-responsive" src="images/img3-md.jpg" alt="">
+							<ul>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<h3>zhuozhi</h3>
+						<h4>/ 设计师</h4>
+						<p>网站设计、Growth Hack</p>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="parallax-counter parallaxBg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6">
+						<div class="counters">
+							<span class="counter">108129</span>
+							<h4>关注者</h4>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="counters">
+							<span class="counter">277</span>
+							<h4>拍摄任务</h4>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="counters">
+							<span class="counter">10</span>
+							<h4>团队人数</h4>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="counters">
+							<span class="counter">9999</span>
+							<h4>获奖</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  About Section -->
+
+	<!-- Services Section -->
+	<section id="services">
+		<div class="container content-lg">
+			<div class="title-v1">
+				<h2>我们所提供的服务</h2>
+				<p>使你完成 <strong>从0到1</strong> 的突破 <br>
+				在 <strong>不经意间</strong> 通晓各种摄影专用词汇，一不留神成为高手。</p>
+			</div>
+
+			<div class="row service-box-v1">
+				<div class="col-md-4 col-sm-6">
+					<div class="service-block service-block-default">
+						<i class="icon-custom icon-lg icon-bg-u rounded-x fa fa-lightbulb-o"></i>
+						<h2 class="heading-md">初窥门径</h2>
+						<p>完成此课程你将成为一名手机摄影的超级新手</p>
+						<ul class="list-unstyled">
+							<li>审美提升</li>
+							<li>如何正确取景</li>
+							<li>黄金分割应用实例</li>
+							<li>手机功能简述</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="service-block service-block-default">
+						<i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-present"></i>
+						<h2 class="heading-sm">略有所成</h2>
+						<p>恭喜你，正在向手机摄影胜任者的阶段启航</p>
+						<ul class="list-unstyled">
+							<li>自拍的进化论</li>
+							<li>风景拍摄</li>
+							<li>肖像拍摄101</li>
+							<li>宠物拍摄</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="service-block service-block-default">
+						<i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-rocket"></i>
+						<h2 class="heading-sm">融会贯通</h2>
+						<p>你已经具备一名精通手机摄影者的气质！</p>
+						<ul class="list-unstyled">
+							<li>如何拍出大片</li>
+							<li>人文摄影</li>
+							<li>发现和观察的秘籍</li>
+							<li>后期 APP 精修</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul class="list-unstyled row portfolio-box-v1">
+			<li class="col-sm-4">
+				<img class="img-responsive" src="images/taocan1.jpg" alt="">
+				<div class="portfolio-box-v1-in">
+					<h3>课程套餐</h3>
+					<p>课程打包购买</p>
+					<a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">了解更多</a>
+				</div>
+			</li>
+			<li class="col-sm-4">
+				<img class="img-responsive" src="images/taocan2.jpg" alt="">
+				<div class="portfolio-box-v1-in">
+					<h3>套餐二</h3>
+					<p>课程购买+棚拍</p>
+					<a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">了解更多</a>
+				</div>
+			</li>
+			<li class="col-sm-4">
+				<img class="img-responsive" src="images/taocan3.jpg" alt="">
+				<div class="portfolio-box-v1-in">
+					<h3>套餐三</h3>
+					<p>课程购买+旅拍</p>
+					<a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">了解更多</a>
+				</div>
+			</li>
+		</ul>
+
+		<div class="call-action-v1">
+			<div class="container">
+				<div class="call-action-v1-box">
+					<div class="call-action-v1-in">
+						<p>由于档期较满，请在跟客服沟通落实后在确定下单。</p>
+					</div>
+					<div class="call-action-v1-in inner-btn page-scroll">
+						<a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">查看我们的作品</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Services Section -->
+
+	<!-- News Section -->
+	<section id="news" class="news-section">
+		<div class="container content-lg">
+			<div class="title-v1">
+				<h2>小道消息</h2>
+				<p>我们志在为客户提供 <strong>与众不同</strong> 的客户体验 <br>
+				为你提供 <strong>满意</strong> 的作品</p>
+			</div>
+
+			<div class="row news-v1">
+				<div class="col-md-4 md-margin-bottom-40">
+					<div class="news-v1-in">
+						<img class="img-responsive" src="images/img1.jpg" alt="">
+						<h3><a href="#">我一直不敢说自己在海啸撸铁……</a></h3>
+						<p>我是反面教材，Dom每次都说我能不能注意力集中在杠铃上，而我想的却是没修完的片子……但是今天值得开心的是，因为基础打的还算好，所以忙碌的五月虽没有时间锻炼，却没长肉。滴，打卡。</p>
+						<ul class="list-inline news-v1-info">
+							<li><span>By</span> <a href="#">七城</a></li>
+							<li>|</li>
+							<li><i class="fa fa-clock-o"></i> 5月30日 21:56 来自 iPhone 7</li>
+							<li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 14</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 md-margin-bottom-40">
+					<div class="news-v1-in">
+						<img class="img-responsive" src="images/img4.jpg" alt="">
+						<h3><a href="#">“I love you”=“今夜月色很好”</a></h3>
+						<p>不是特别理解。后来发现，爱之于你我，也许不需要什么表达，无论含蓄还是直接。如果拍照，无论是笑着的，还是安静的，这些也不重要，重要的是，你们在一起。谢谢你们从上海来，在青岛留下这些照片。</p>
+						<ul class="list-inline news-v1-info">
+							<li><span>By</span> <a href="#">七城</a></li>
+							<li>|</li>
+							<li><i class="fa fa-clock-o"></i> 5月26日 22:08 来自 iPhone 7</li>
+							<li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 07</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="news-v1-in">
+						<img class="img-responsive" src="images/img3.jpg" alt="">
+						<h3><a href="#">#工作日常# </a></h3>
+						<p>这种美好的日子里不拍照岂不是浪费人生。好吧欢迎又一对北京来的cp，欢迎中央电视台的小姐姐来找我拍照
+						<br><br></p>
+						<ul class="list-inline news-v1-info">
+							<li><span>By</span> <a href="#">七城</a></li>
+							<li>|</li>
+							<li><i class="fa fa-clock-o"></i> 5月18日 14:21 来自 iPhone 7</li>
+							<li class="pull-right"><a href="#"><i class="fa fa-comments-o"></i> 22</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="parallax-twitter parallaxBg">
+			<div class="container parallax-twitter-in">
+				<div class="margin-bottom-30">
+					<i class="icon-custom rounded-x icon-bg-blue fa fa-weibo"></i>
+				</div>
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<ul class="list-unstyled owl-twitter-v1">
+							<li class="item">
+								<p>6.3婚纱预告～忍不住翻拍@七城@七城工作室  相机，两天拍摄默契度大爆发💕太美太美@Star-Makeup ​​​​ <a href="http://weibo.com/u/3925984571?refer_flag=1005055013_">http://weibo.com/u/3925984571?refer_flag=1005055013_</a><p>
+								<span>6月3日 23:13 来自 iPhone 6 <a href="#">@Star-Makeup</a></span>
+							</li>
+							<li class="item">
+								<p><a href="#">@htmlstream</a> 劳动节献给了这一对有爱的小伙伴。一定会幸福的[微笑] 淡雅配色的中式场布简直是最近遇到的一股清流，非常refreshing @艾俪婚礼ELLEWEDDING @EvaLunaBridal  <a href="#"></a> <a href="#">#</a></p>
+								<span>15月1日 19:01 来自 iPhone 7<a href="#">@七城工作室</a></span>
+							</li>
+							<li class="item">
+								<p>@七城 老师与HighShadowMakeup携手拍摄品牌宣传大片 青岛·青岛仙人海文化传媒有限公司<a href="#"></a></p>
+								<span>4月20日 15:27 来自 iPhone SE<a href="#">@HighShadowMakeup</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End News Section -->
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="about-section">
+		<div class="container content-lg">
+			<div class="title-v1">
+				<h2>我们的作品</h2>
+				<p>感受来自 <strong>七城工作室</strong> 的摄影大片 </p>
+			</div>
+
+
+			<div class="cube-portfolio">
+				<div id="filters-container" class="cbp-l-filters-button">
+					<div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> 全部 </div>
+					<div data-filter=".goods" class="cbp-filter-item"> 美物 </div>
+					<div data-filter=".view" class="cbp-filter-item"> 美景 </div>
+					<div data-filter=".beauty" class="cbp-filter-item"> 美人 </div>
+				</div><!--/end Filters Container-->
+
+				<div id="grid-container" class="cbp-l-grid-gallery">
+					<div class="cbp-item goods ">
+						<a href="assets/ajax/project1.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="World Clock Widget<br>by Paul Flavius Nechita">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/1.jpg" alt="">
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item goods photography">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/work-2.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美物-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								goods
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">婚礼装饰</div>
+										<div class="cbp-l-caption-desc">by 七城</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item food photography">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/work-3.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美食-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								food
+						</a>
+					</div>
+					<div class="cbp-item goods ">
+						<a href="assets/ajax/project2.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="Bolt UI<br>by Tiberiu Neamu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/2.jpg" alt="">
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item photography">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/photo01.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美景-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								Photography
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">健康餐</div>
+										<div class="cbp-l-caption-desc">by 七城 iphone拍摄</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item food ">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/work-masonry-2.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美食-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								beauty
+						</a>
+					</div>
+					<div class="cbp-item goods">
+						<a href="assets/ajax/project3.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="WhereTO App<br>by Tiberiu Neamu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/3.jpg" alt="">
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item goods beauty">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/work-6.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美物-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								goods
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">健康餐局部特写</div>
+										<div class="cbp-l-caption-desc">by 七城 iphone拍摄</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
-
-				<!-- PORTFOLIO ITEM -->
-				<li class="work-item beauty">
-					<a href="portfolio-single-1.html">
-						<div class="work-image">
-							<img src="images/beauty01.jpg" alt="">
-						</div>
-						<div class="work-caption">
-							<h3 class="work-title font-alt">美物-手机拍摄教程</h3>
-							<div class="work-descr font-inc">
-								goods
+						</a>
+					</div>
+					<div class="cbp-item view">
+						<a href="assets/ajax/project4.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="iDevices<br>by Tiberiu Neamu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/11.jpg" alt="">
 							</div>
-						</div>
-					</a>
-				</li>
-				<!-- /PORTFOLIO ITEM -->
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">青岛天主教堂</div>
+										<div class="cbp-l-caption-desc">by 七城 iphone拍摄</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="cbp-item view">
+						<a href="assets/ajax/project5.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/5.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">海边别墅</div>
+										<div class="cbp-l-caption-desc">by 七城 iphone拍摄</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="cbp-item view">
+						<a href="assets/ajax/project6.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="Remind~Me Widget<br>by Tiberiu Neamu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/6.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">同安路与海尔路路口</div>
+										<div class="cbp-l-caption-desc">by 七城 iPhone拍摄</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="cbp-item beauty">
+						<a href="assets/ajax/project7.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="Workout Buddy<br>by Tiberiu Neamu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/7.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">凯悦婚礼</div>
+										<div class="cbp-l-caption-desc">by 七城</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="cbp-item beauty">
+						<a href="assets/ajax/project8.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="Digital Menu<br>by Cosmin Capitanu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/8.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">户外婚礼</div>
+										<div class="cbp-l-caption-desc">by 七城</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="cbp-item beauty">
+						<a href="assets/ajax/project9.html" class="cbp-caption cbp-singlePageInline"
+						   data-title="Holiday Selector<br>by Cosmin Capitanu">
+							<div class="cbp-caption-defaultWrap">
+								<img src="images/4.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="cbp-l-caption-alignLeft">
+									<div class="cbp-l-caption-body">
+										<div class="cbp-l-caption-title">场景婚纱照</div>
+										<div class="cbp-l-caption-desc">by 七城</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 
+			<!-- 加载更多选项，先不启用 -->
+				<!-- <div class="cbp-l-loadMore-button">
+					<a href="assets/ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
+				</div> -->
+
+			</div>
+		</div>
+
+		<div class="clients-section parallaxBg">
+			<div class="container">
+				<div class="title-v1">
+					<h2>企业级客户</h2>
+				</div>
+				<ul class="owl-clients-v2">
+					<li class="item"><a href="#"><img src="images/national-geographic.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/inspiring.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/fred-perry.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/emirates.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/baderbrau.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/national-geographic.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/inspiring.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/fred-perry.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/emirates.png" alt=""></a></li>
+					<li class="item"><a href="#"><img src="images/baderbrau.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="testimonials-v3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<ul class="list-unstyled owl-ts-v1">
+							<li class="item">
+								<img class="rounded-x img-bordered" src="images/img3-sm.jpg" alt="">
+								<div class="testimonials-v3-title">
+									<p>zhouzhi</p>
+									<span>设计师</span>
+								</div>
+								<p> 目前熱愛手工，學習方法是興趣驅動+覓高手學習+實踐<p>
+							</li>
+							<li class="item">
+								<img class="rounded-x img-bordered" src="images/img2-sm.jpg" alt="">
+								<div class="testimonials-v3-title">
+									<p>Jude Yang</p>
+									<span>IT , 林生轩</span>
+								</div>
+								<p>我这一生，全靠浪</p>
+							</li>
+							<li class="item">
+								<img class="rounded-x img-bordered" src="images/img1-sm.jpg" alt="">
+								<div class="testimonials-v3-title">
+									<p>七城</p>
+									<span>摄影师, 七城工作室</span>
+								</div>
+								<p> 青岛广电无线传媒集团 特邀摄影师 七城工作室创始人微信公众账号：7chengvision 约片客服微信：qicheng772</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Portfolio Section -->
+
+	<!-- Contact Section -->
+	<section id="contact" class="contacts-section">
+			<div class="container content-lg">
+				<div class="title-v1">
+					<h2>联系我们</h2>
+					<p>欢迎骚扰哦~</p>
+				</div>
+
+				<div class="row contacts-in">
+					<div class="col-md-6 md-margin-bottom-40">
+						<ul class="list-unstyled">
+							<li><i class="fa fa-home"></i>山东省青岛市崂山区同安路868号</li>
+							<li><i class="fa fa-phone"></i> +86 0532 </li>
+						</ul>
+					</div>
+
+					<div class="col-md-6">
+						<ul class="list-unstyled">
+							<li><i class="fa fa-envelope"></i> <a href="judeyang@foxmail.com">judeyang@foxmail.com</a></li>
+							<li><i class="fa fa-globe"></i> <a href="http://www.7chengvision.com/">www.7chengvision.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		<div class="copyright-section">
+			<p>Copyright ©2017 林生轩 Design by Jude.</p>
+			<!-- <ul class="social-icons">
+				<li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+				<li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+				<li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+				<li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+				<li><a href="#" data-original-title="Linkedin" class="social_linkedin rounded-x"></a></li>
+			</ul> -->
+			<span class="page-scroll"><a href="#intro"><i class="fa fa-angle-double-up back-to-top"></i></a></span>
+		</div>
+
+
+
+
+
+
+		<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+			<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+				<ul class="cd-switcher">
+					<li><a href="javascript:void(0);">登录</a></li>
+					<li><a href="javascript:void(0);">注册</a></li>
+				</ul>
+
+				<div id="cd-login"> <!-- log in form -->
+					<form class="cd-form">
+						<p class="social-login">
+							<span class="social-login-weixin"><a href="#"><i class="fa fa-weixin"></i> 微信</a></span>
+							<span class="social-login-weibo"><a href="#"><i class="fa fa-weibo"></i> 微博</a></span>
+							<span class="social-login-qq"><a href="#"><i class="fa fa-qq"></i> QQ</a></span>
+						</p>
+
+						<div class="lined-text"><span>使用 7chengvision 的账号</span><hr></div>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signin-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message"> 这不太对啊老湿~</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">密码</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+							<a href="javascript:void(0);" class="hide-password">Hide</a>
+							<span class="cd-error-message">这不太对啊老湿~</span>
+						</p>
+
+						<p class="fieldset">
+							<input type="checkbox" id="remember-me" checked>
+							<label for="remember-me">记住我</label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width" type="submit" value="登录">
+						</p>
+
+					</form>
+					<p class="cd-form-bottom-message"><a href="javascript:void(0);">忘记密码？</a></p>
+						<!-- <a href="javascript:void(0);" class="cd-close-form">Close</a> -->
+				</div> <!-- cd-login -->
+
+
+
+
+				<div id="cd-signup"> <!-- sign up form -->
+					<form class="cd-form">
+						<p class="social-login">
+							<span class="social-login-weixin"><a href="#"><i class="fa fa-weixin"></i> 微信</a></span>
+							<span class="social-login-weibo"><a href="#"><i class="fa fa-weibo"></i> 微博</a></span>
+							<span class="social-login-qq"><a href="#"><i class="fa fa-qq"></i> QQ</a></span>
+						</p>
+
+						<div class="lined-text"><span>注册 7chengvision 的账号</span><hr></div>
+
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">用户名</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+							<span class="cd-error-message">这不太对啊老湿</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">这不太对啊老湿</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">密码</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+							<a href="javascript:void(0);" class="hide-password">Hide</a>
+							<span class="cd-error-message">这不太对啊老湿</span>
+						</p>
+
+						<!-- <p class="fieldset">
+							<input type="checkbox" id="accept-terms">
+							<label for="accept-terms">我同意 <a href="javascript:void(0);">Jude 最帅！</a></label>
+						</p> -->
+
+						<p class="fieldset">
+							<input class="full-width has-padding" type="submit" value="新建账户">
+						</p>
+					</form>
+
+					<!-- <a href="javascript:void(0);" class="cd-close-form">Close</a> -->
+				</div> <!-- cd-signup -->
+
+				<div id="cd-reset-password"> <!-- reset password form -->
+					<p class="cd-form-message">把密码给忘却了? 输入邮箱地址。<br> 您会收到一封重置密码的链接。</p>
+
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="reset-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">别闹！这里需要输入你的注册邮箱。</span>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width has-padding" type="submit" value="重置密码">
+						</p>
+					</form>
+
+					<p class="cd-form-bottom-message"><a href="javascript:void(0);">回到登录界面</a></p>
+				</div> <!-- cd-reset-password -->
+				<a href="javascript:void(0);" class="cd-close-form">关闭</a>
+			</div> <!-- cd-user-modal-container -->
+		</div> <!-- cd-user-modal -->
+	</section>
+	<!-- End Contact Section -->
+
+	<!--=== 样式切换 ===-->
+	<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+	<div class="style-switcher animated fadeInRight">
+		<div class="style-swticher-header">
+			<div class="style-switcher-heading">选择主题颜色</div>
+			<div class="theme-close"><i class="icon-close"></i></div>
+		</div>
+
+		<div class="style-swticher-body">
+			<!-- 主体颜色 -->
+			<div class="style-switcher-heading"></div>
+			<ul class="list-unstyled">
+				<li class="theme-default" data-style="default" data-header="light"></li>
+				<li class="theme-blue" data-style="blue" data-header="light"></li>
+				<li class="theme-orange" data-style="orange" data-header="light"></li>
+				<li class="theme-red" data-style="red" data-header="light"></li>
+				<li class="theme-light" data-style="light" data-header="light"></li>
+				<li class="theme-purple last" data-style="purple" data-header="light"></li>
+				<li class="theme-aqua theme-active" data-style="aqua" data-header="light"></li>
+				<li class="theme-brown" data-style="brown" data-header="light"></li>
+				<li class="theme-dark-blue" data-style="dark-blue" data-header="light"></li>
+				<li class="theme-light-green" data-style="light-green" data-header="light"></li>
+				<li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+				<li class="theme-teal last" data-style="teal" data-header="light"></li>
 			</ul>
-			<!-- /PORTFOLIO LIST -->
 
-		</section>
-		<!-- /PORTFOLIO -->
-
-		<!-- TESTIMONIAL -->
-		<section class="module-small">
-
-			<div class="container">
-
-				<div class="row">
-
-					<!-- MODULE TITLE -->
-					<div class="col-sm-6">
-						<h2 class="module-title font-alt">用户说</h2>
-					</div>
-					<!-- /MODULE TITLE -->
-
-					<!-- BLOCKQUOTE -->
-					<div class="col-sm-6">
-						<blockquote class="font-serif align-right">
-							<p>在胶澳学堂参加了摄影女神七城的手机摄影课后， 通过寻找自己最合适的拍照角度，用手机APP后期调试，自拍出的照片感觉整个人仿佛都瘦了30斤！感谢女神，么么哒~</p>
-							<p class="font-inc font-uppercase">-  Xdite</p>
-						</blockquote>
-					</div>
-					<!-- /BLOCKQUOTE -->
-
-				</div>
-
-			</div>
-
-		</section>
-		<!-- /TESTIMONIAL -->
+			<hr>
 
 
-		<!-- ABOUT -->
-		<section class="module p-t-0 p-b-0" data-background="images/section-4.jpg" style="background-image: url(&quot;images/section-4.jpg&quot;);">
-
-			<div class="container-fluid">
-
-				<div class="row relative">
-
-					<div class="col-sm-12 col-md-6 col-md-offset-6 col-bg">
-
-						<h2 class="module-title font-alt">关于胶澳学堂</h2>
-
-						<div class="module-subtitle font-inc">
-							胶澳学堂通过与不同行业内优秀且富有经验的一线达人通力合作，通过认知心理学及游戏化教学等黑科技设计出成瘾性的课程，将最有价值的课程分享于你。
-						</div>
-
-						<p>先期引入的手机摄影课程，由拍照美，人更美，微博10万粉大V，女神 @七城 亲自操刀。女神本人也是@七城工作室 的主理人。</p>
-
-						<p>后续胶澳学堂将请到前八一队举重运动员，现役军人 Instagram 大V yangyang7878，为大家带来富有中国特色的技术流举重课程。</p>
-
-						<ul class="social-list">
-							<li><a href="#"><span class="fa fa-weixin"></span></a></li>
-							<li><a href="#"><span class="fa fa-weibo"></span></a></li>
-							<li><a href="#"><span class="fa fa-qq"></span></a></li>
-						</ul>
+	<!--=== /样式切换 ===-->
 
 
-					</div>
 
-				</div>
-
-			</div>
-
-		</section>
-		<!-- /ABOUT -->
-
-		<!-- CONTACT -->
-		<section class="module-small">
-
-			<div class="container">
-
-				<div class="row">
-
-					<!-- CONTENT BOX -->
-					<div class="col-sm-4">
-						<div class="content-box">
-							<div class="content-box-icon">
-								<span class="fa fa-map-pin"></span>
-							</div>
-							<div class="content-box-title font-inc">
-								同安路868, 青岛, 中国
-							</div>
-						</div>
-					</div>
-					<!-- /CONTENT BOX -->
-
-					<!-- CONTENT BOX -->
-					<div class="col-sm-4">
-						<div class="content-box">
-							<div class="content-box-icon">
-								<span class="fa fa-phone"></span>
-							</div>
-							<div class="content-box-title font-inc">
-								+86 0532
-							</div>
-						</div>
-					</div>
-					<!-- /CONTENT BOX -->
-
-					<!-- CONTENT BOX -->
-					<div class="col-sm-4">
-						<div class="content-box">
-							<div class="content-box-icon">
-								<span class="fa fa-envelope"></span>
-							</div>
-							<div class="content-box-title font-inc">
-								judeyang@foxmail.com
-							</div>
-						</div>
-					</div>
-					<!-- /CONTENT BOX -->
-
-				</div>
-
-			</div>
-
-		</section>
-		<!-- /CONTACT -->
-
-		<!-- FOOTER -->
-		<footer class="footer">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-sm-12 text-center">
-						<p class="copyright font-inc m-b-0">Copyright ©2017 <a href="">林生轩</a>, Design by Jude.</p>
-					</div>
-
-				</div>
-
-			</div>
-
-		</footer>
-		<!-- /FOOTER -->
-
-	</div>
-	<!-- /WRAPPER -->
-
-	<!-- Scroll-up -->
-	<div class="scroll-up">
-		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
-	</div>
-
-
-	<!-- Javascript files -->
-
-	<script src="assets/javascripts/jquery-2.1.3.min.js"></script>
-	<script src="//cdn.bootcss.com/jquery-ujs/1.2.2/rails.min.js"></script>
+	<!-- JS Global Compulsory -->
+	<script src="assets/javascripts/jquery.min.js"></script>
+	<script src="assets/javascripts/jquery-migrate.min.js"></script>
 	<script src="assets/javascripts/bootstrap.min.js"></script>
-	<script src="assets/javascripts/jquery.mb.YTPlayer.min.js"></script>
-	<script src="assets/javascripts/appear.js"></script>
-	<script src="assets/javascripts/jquery.simple-text-rotator.min.js"></script>
-	<script src="assets/javascripts/jqBootstrapValidation.js"></script>
-	<script src="assets/javascripts/js"></script>
-	<script src="assets/javascripts/isotope.pkgd.min.js"></script>
-	<script src="assets/javascripts/imagesloaded.pkgd.js"></script>
-	<script src="assets/javascripts/jquery.flexslider-min.js"></script>
-	<script src="assets/javascripts/jquery.magnific-popup.min.js"></script>
-	<script src="assets/javascripts/jquery.fitvids.js"></script>
-	<script src="assets/javascripts/smoothscroll.js"></script>
-	<script src="assets/javascripts/wow.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script src="assets/javascripts/smoothScroll.js"></script>
+	<script src="assets/javascripts/jquery.easing.min.js"></script>
+	<script src="assets/javascripts/pace.min.js"></script>
+	<script src="assets/javascripts/jquery.parallax.js"></script>
+	<script src="assets/javascripts/waypoints.min.js"></script>
+	<script src="assets/javascripts/jquery.counterup.min.js"></script>
+	<script src="assets/javascripts/owl.carousel.js"></script>
+	<script src="assets/javascripts/jquery.form.min.js"></script>
+	<script src="assets/javascripts/jquery.validate.min.js"></script>
+	<script src="assets/javascripts/jquery.themepunch.tools.min.js"></script>
+	<script src="assets/javascripts/jquery.themepunch.revolution.min.js"></script>
+	<script src="assets/javascripts/jquery.cubeportfolio.min.js"></script>
+	<script src="assets/javascripts/modernizr.js"></script>
+	<script src="assets/javascripts/main.js"></script> <!-- Gem jQuery -->
+
+	<!-- JS Page Level-->
+	<script src="assets/javascripts/one.app.js"></script>
+	<script src="assets/javascripts/login.js"></script>
 	<script src="assets/javascripts/contact.js"></script>
-	<script src="assets/javascripts/custom.js"></script>
-	<script src="//cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js"></script>
+	<script src="assets/javascripts/pace-loader.js"></script>
+	<script src="assets/javascripts/owl-carousel.js"></script>
+	<script src="assets/javascripts/style-switcher.js"></script>
+	<script src="assets/javascripts/revolution-slider.js"></script>
+	<script src="assets/javascripts/cube-portfolio-lightbox.js"></script>
+	<script src="assets/javascripts/plugin.js"></script>
 
-	<!-- BGM -->
+	<script>
+		jQuery(document).ready(function() {
+			App.init();
+			App.initCounter();
+			App.initParallaxBg();
+			LoginForm.initLoginForm();
+			ContactForm.initContactForm();
+			OwlCarousel.initOwlCarousel();
+			StyleSwitcher.initStyleSwitcher();
+			RevolutionSlider.initRSfullScreen();
+		});
+	</script>
+	<!--[if lt IE 9]>
+		<script src="assets/javascripts/respond.js"></script>
+		<script src="assets/javascripts/html5shiv.js"></script>
+		<script src="assets/javascripts/placeholder-IE-fixes.js"></script>
+		<script src="assets/javascripts/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+	<![endif]-->
 
-	<!-- <%= audio_tag "http://downloadlagu.planetlagu.site/save/04%20Coldplay%20Fix%20You.mp3", controls: true, autoplay: true %> -->
-	<!-- BGM -->
+	<!--[if lt IE 10]>
+		<script src="assets/javascripts/jquery.placeholder.min.js"></script>
+	<![endif]-->
 
-
-</body></html>
+</body>
+</html>
