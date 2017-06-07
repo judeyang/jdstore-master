@@ -43,6 +43,8 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
+    autoprefixer-rails (7.1.1)
+      execjs
     awesome_print (1.7.0)
     awesome_rails_console (0.4.0)
       awesome_print
@@ -50,6 +52,9 @@ GEM
       railties
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     carrierwave (1.1.0)
       activemodel (>= 4.0.0)
@@ -240,6 +245,7 @@ PLATFORMS
 DEPENDENCIES
   aasm
   awesome_rails_console
+  bootstrap-sass
   carrierwave
   carrierwave-qiniu
   coffee-rails (~> 4.2)
